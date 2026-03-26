@@ -27,7 +27,6 @@ def build_graph():
     graph.add_edge("classifier", "fixer")
     graph.add_edge("fixer", "critic")
 
-    # 🔥 Conditional edge
     graph.add_conditional_edges("critic", should_retry, {"fixer": "fixer", "end": END})
 
     return graph.compile()
