@@ -1,8 +1,10 @@
 langchain
 langchain-openai
+langchain-google-genai
 langgraph
 pydantic
 fastapi
 uvicorn
+gunicorn
 python-dotenv
 google-generativeai
